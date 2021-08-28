@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #242333;
+}
+
+/* .container {
+
+} */
+
+.movie {
+    margin: 20px 0;
+}
+
+label {
+    color: #fff;
+}
+
+select {
+    background-color: #fff;
+    margin: 0 0 0 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+select:focus {
+    outline: none;
+}
+
+/* option:last-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+} */
+
+.status {
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+small {
+    margin-left: 2px;
+}
+
+.seat {
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.selected {
+    background-color: #6FEAF6;
+}
+
+.occupied {
+    background-color: #fff;
+}
+
+.theater {
+    perspective: 1000px;
+    margin-bottom: 30px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screen {
+    background-color: #fff;
+    height: 70px;
+    /* width: 200px; */
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgb(255, 255, 255, 0.7);
+}
+
+.row {
+    display: flex;
+}
+
+.row .seat:nth-child(2), .row .seat:nth-child(6) {
+    margin-right: 18px;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+}
+
+span {
+    color: #6FEAF6;
+}

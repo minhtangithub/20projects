@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Project 2 - Movie Seat Booking</title>
+</head>
+<body>
+    <div class="container">
+        <div class="movie">
+            <label for="">
+                Chọn phim (đồng giá 35K):
+            </label>
+            <select name="" id="pick-movie">
+                <option value="">Bố già lắm chiêu</option>
+                <option value="">Ai rồi cũng sẽ khát</option>
+                <option value="">Bên cầu dệt lụa</option>
+            </select>
+        </div>
+        <ul class="status">
+            <li>
+                <div class="seat"></div>
+                <small>Chưa chọn</small>
+            </li>
+            <li>
+                <div class="seat" style="background-color: #6FEAF6;"></div>
+                <small>Bạn chọn</small>
+            </li>
+            <li>
+                <div class="seat occupied"></div>
+                <small>Đã được đặt</small>
+            </li>
+        </ul>
+        <div class="theater">
+            <div class="screen"></div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <p class="text">Bạn đã đặt <span>0</span> vé, cần thanh toán <span>0K</span></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

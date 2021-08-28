@@ -1,0 +1,1 @@
+2. rotateX voi 1 HCN, perspective tạo 3D
