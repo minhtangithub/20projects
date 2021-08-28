@@ -67,7 +67,7 @@ function checkPassword (el, str) {
 }
 
 function checkConfirm (el, str) {
-    if (str === password.value) {
+    if (str === password.value && str.trim().length>0) {
         showSuccess(el);
     }
     else {
