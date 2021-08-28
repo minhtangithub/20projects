@@ -83,18 +83,18 @@ form.addEventListener('submit', function (e) {
     checkConfirm (password2, password2.value);
 })
 
-username.addEventListener('change', function() {
+username.addEventListener('input', function() {
     local.setItem('username', username.value);
 })
 
-email.addEventListener('change', function() {
+email.addEventListener('input', function() {
     local.setItem('email', email.value);
 })
 
-password.addEventListener('change', function() {
+password.addEventListener('input', function() {
     local.setItem('password', password.value);
 })
 
-password2.addEventListener('change', function() {
+password2.addEventListener('input', function() {
     local.setItem('password2', password2.value);
 })
