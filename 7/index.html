@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Project 7 - SVG Hang Game</title>
+</head>
+<body>
+    <h1>Hangman</h1>
+    <p>Mỗi lần điền đúng sẽ được tăng 1 phong vị, trả lời sai dô lãnh cung</p>
+    <p class="text"></p>
+    <p class="question"></p>
+    <div class="game">
+        <svg height="250" width="200" class="svg">
+            <line x1="20" y1="230" x2="100" y2="230"></line>
+            <line x1="60" y1="20" x2="60" y2="230"></line>
+            <line x1="60" y1="20" x2="140" y2="20"></line>
+            <line x1="140" y1="20" x2="140" y2="50"></line>
+
+            <circle cx="140" cy="70" r="20" class="part"></circle>
+            <line x1="140" y1="90" x2="140" y2="170" class="part"></line>
+            <line x1="140" y1="120" x2="120" y2="100" class="part"></line>
+            <line x1="140" y1="120" x2="160" y2="100" class="part"></line>
+            <line x1="140" y1="150" x2="120" y2="180" class="part"></line>
+            <line x1="140" y1="150" x2="160" y2="180" class="part"></line>
+        </svg>
+        <div class="wrong">
+            <p>Wrong</p>
+            <span></span>
+        </div>
+        <div class="word">
+        </div>
+    </div>
+    <div class="result-container">
+        <div class="result">
+            <h2>Chúc mừng bạn đã được tấn phong</h2>
+            <button>Chơi tiếp</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

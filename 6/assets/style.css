@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+    --modal-duration: 1s;
+    --primary-color: #30336b;
+    --secondary-color: #be2edd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    position: relative;
+    transition: transform 0.3s ease-in;
+}
+
+.overlay {
+    /* animation: goOut var(--modal-duration) linear; */
+    z-index: 1;
+}
+
+.overlay.show {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* animation: goIn var(--modal-duration) linear; */
+}
+
+@keyframes goOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes goIn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+body.show-nav {
+    transform: translateX(200px);
+}
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 40px 15px;
+}
+
+header > button:first-child {
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.3);
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+header > button ~ button{
+    padding: 12px 30px;
+    background-color: var(--secondary-color);
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+header > h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header > p {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+
+.modal {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0, 30%) 0px 0px 10px;
+    width: 400px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    /* top: 20%; */
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    z-index: 1;
+    animation: modal var(--modal-duration) linear;
+    display: none;
+}
+
+.modal.show {
+    display: block;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+    }    
+    to {
+        opacity: 1;
+    }
+}
+
+.modal__header {
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.modal__content {
+    padding: 20px;
+}
+
+.modal__content > p {
+   margin: 16px 0;
+}
+
+.input-wraper {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin: 0 0 5px;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+}
+
+.modal button {
+    padding: 8px 12px;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+}
+
+nav {
+    width: 200px;
+    background-color: var(--primary-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transform: translateX(-200%);
+    border-right: 2px solid rgba(200, 200, 200, 0.1);
+    /* transition: transform 0.3s ease-in; */
+    z-index: 10;
+}
+
+nav.show {
+    transform: translateX(-100%);
+    /* transition: transform 0.3s ease-in; */
+}
+
+nav .avatar {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .avatar img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+nav .avatar img:hover {
+    border-radius: 0;
+    transition: all 0.3s linear;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #fff;
+}
+
+nav li:first-child {
+    border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+nav li {
+    padding: 20px;
+    border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 15px;
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
+}
+/* 
+.content > h2 {
+
+}
+
+.content > p {
+
+} */
